@@ -175,7 +175,9 @@ export default function ReelMind() {
     try {
       console.log("Sending request to backend with payload:", payload)
 
-      const response = await fetch("http://localhost:5000/recommendations", {
+      const BACKEND_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000'; // Add this line at the beginning of your handleSubmit function or above it if needed globally in the component.
+
+      const response = await fetch(`${BACKEND_BASE_URL}/recommendations`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
