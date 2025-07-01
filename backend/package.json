@@ -1,0 +1,30 @@
+{
+  "name": "gemini-recommender-backend",
+  "version": "1.0.0",
+  "description": "Backend for a Gemini-powered movie/series recommendation system.",
+  "main": "app.js",
+  "type": "module",  
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "gemini-api",
+    "movie-recommender",
+    "fullstack"
+  ],
+  "author": "Your Name (or leave blank)",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.14.0",
+    "axios": "^1.7.2",      
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"   
+  }
+}
