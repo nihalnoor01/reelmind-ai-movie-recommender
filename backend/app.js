@@ -232,6 +232,13 @@ app.post('/recommendations', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+    res.json({ 
+        status: "success", 
+        message: "Movie Recommender API is live!",
+        endpoint_info: "Send a POST request to /recommendations with your user preferences."
+    });
+});
 // Start the server
 app.listen(PORT, () => {
     console.log(`Backend server running on http://localhost:${PORT}`);
